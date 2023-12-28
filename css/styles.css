@@ -1,93 +1,92 @@
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: rgb(219, 219, 178);
-    color: rgb(61, 58, 58);
-    text-align: center;
-    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: rgb(255, 122, 122);
+    height: auto;
+}
+
+.recipes{
+    padding: 50px;
+    background-color: rgb(200, 200, 122);
+    flex: 2;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+
+.recipe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: rgb(200, 200, 200)
+}
+
+.recipe-item:hover {
+    background-color: rgb(255, 200, 122);
+}
+
+.recipe-item figcaption {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: rgb(200, 150, 0);
 }
 
 .title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    background-color: beige;
-    width: 600px;
-    margin: 30px auto;
-    padding: 10px;
+    padding: 25px;
+    min-width: 25%;
+    width: 75%;
+    text-align: center;
+    background-color: rgb(200, 200, 122);
 }
 
-.recipe {
-    display: inline-block;
-    margin: 30px 10px;
-    padding: 10px;
-    width: 200px;
-    background-color: rgb(223, 158, 98);
-    color: rgba(134, 54, 1, 0.87);
-    text-decoration: none;
+.headings {
+    min-width: 25%;
+    width: 50%;
+    text-align: center;
+    padding: 25px;
+    margin: 0 0 25px 0;
+    background-color: rgb(255, 122, 122);
 }
 
-.recipe:hover {
-    background-color: rgb(228, 189, 152);
-}
-
-.heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    background-color: beige;
-    width: 600px;
-    margin: 50px auto;
-    padding: 15px 0;
-}
-
-.sub-heading {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    max-width: 250px;
-    margin: 50px auto 10px;
-    padding: 10px 20px;
-    background-color: beige;
-}
-
-img {
+.medium {
+    width: 300px;
     height: auto;
-    width: 400px;
-    margin-right: 10px;
 }
 
-.block {
-    display: block;
-}
-
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
-}
-
-ul, ol {
-    max-width: 800px;
-    margin: 20px 20px;
-    padding: 10px;
-    background-color: rgb(192, 112, 21);
-    text-align: left;
-}
-
-li {
-    background-color: rgb(128, 82, 14);
-    color: rgb(231, 196, 144);
-    margin: 0 30px;
-    padding: 5px;
-    border: 1px solid rgb(207, 156, 90);
-}
-
-.description {
-    display: inline-block;
-    background-color: beige;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 10px;
-    vertical-align: top;
+a {
+    text-decoration: none;
+    color: black;
 }
